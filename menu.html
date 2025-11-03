@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MENU — RESTAURACJA NOVA</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .menu-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 0;
+      text-align: center;
+    }
+    .menu-section h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 24px;
+    }
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .menu-item {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      font-size: 1.1rem;
+    }
+    .menu-item h2 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-family: 'Playfair Display', serif;
+    }
+    .menu-item p {
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="brand" href="index.html"><img src="logo nova.jfif" alt="Nova Restaurant logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">NOVA</a></li>
+          <li><a href="restauracje.html">RESTURACJA</a></li>
+          <li><a href="wesela.html">IMPREZY</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="menu-section">
+    <h1>MENU</h1>
+    <div class="menu-list">
+      <div class="menu-item">
+        <h2>Żurek z kiełbasą</h2>
+        <p>Tradycyjna polska zupa na zakwasie z białą kiełbasą i jajkiem.</p>
+      </div>
+      <div class="menu-item">
+        <h2>Schabowy z ziemniakami</h2>
+        <p>Klasyczny kotlet schabowy, podawany z ziemniakami i surówką.</p>
+      </div>
+      <div class="menu-item">
+        <h2>Pierogi ruskie</h2>
+        <p>Ręcznie lepione pierogi z farszem z ziemniaków i twarogu.</p>
+      </div>
+      <div class="menu-item">
+        <h2>Deser dnia</h2>
+        <p>Codziennie inny, świeży deser przygotowany przez naszego cukiernika.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">© 2025 Nova Restaurant. Wszelkie prawa zastrzeżone.</div>
+  </footer>
+</body>
+</html>

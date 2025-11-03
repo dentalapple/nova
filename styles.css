@@ -1,3 +1,54 @@
+/* Main start panel styles */
+.main-hero {
+  min-height: 100vh;
+  width: 100vw;
+    background: url('salatlo.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main-hero-content {
+  background: rgba(255,255,255,0.75);
+  border-radius: 18px;
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+.main-hero-content h1 {
+  font-size: 3.2rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+}
+.main-hero-content h2 {
+  font-size: 2.1rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+.main-hero-menu {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  background: var(--primary);
+  color: #fff;
+  padding: 18px 44px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.main-hero-menu:hover {
+  background: var(--primary-700);
+}
 :root {
   --bg: #f7f8fb;
   --surface: #ffffff;
@@ -56,8 +107,14 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 14px 0;
+}
+.brand {
+  margin-right: auto;
+}
+nav {
+  margin-left: auto;
 }
 
 .brand img {
@@ -79,6 +136,7 @@ nav a {
   color: var(--text);
   display: inline-block;
   font-size: 3rem;
+  text-transform: uppercase;
 }
 
 nav a:hover {

@@ -73,11 +73,12 @@ nav ul {
 }
 
 nav a {
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: 600;
+  padding: 32px 48px;
+  border-radius: 12px;
+  font-weight: 700;
   color: var(--text);
   display: inline-block;
+  font-size: 3rem;
 }
 
 nav a:hover {

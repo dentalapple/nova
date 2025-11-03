@@ -147,8 +147,9 @@ nav {
   align-items: center;
 }
 
+/* Logo size increased */
 .brand img {
-  height: 140px;
+  height: 200px;
   display: block;
   transition: transform 0.3s ease;
 }
@@ -167,15 +168,16 @@ nav ul {
   padding: 0;
 }
 
+/* Navigation font size increased */
 nav a {
-  padding: 8px 12px;
+  padding: 12px 18px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text);
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -439,46 +441,59 @@ footer {
 }
 
 @media (max-width: 640px) {
+  body {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .container {
+    width: 98%;
+    padding: 0 4px;
+  }
   header .header-container {
     flex-direction: column;
-    padding: 12px 0;
-    gap: 12px;
+    gap: 8px;
+    padding: 8px 0;
   }
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
   }
   nav a {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
+    padding: 10px 8px;
   }
   .brand img {
-    height: 100px;
-  }
-  .card img {
-    height: 180px;
-  }
-  .hero {
-    padding: 48px 0;
-  }
-  section {
-    padding: 48px 0;
+    height: 90px;
   }
   .main-hero-content {
-    padding: 32px 24px;
+    padding: 24px 8px;
   }
   .main-hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
   .main-hero-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .main-hero-menu {
-    font-size: 1.2rem;
-    padding: 14px 32px;
+    font-size: 1.1rem;
+    padding: 12px 24px;
   }
-  .contact-form {
-    padding: 24px 16px;
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .card img {
+    height: 160px !important;
+  }
+  .card-content {
+    padding: 12px 4px;
+  }
+  section {
+    padding: 18px 0;
+  }
+  footer .container {
+    font-size: 0.95rem;
+    padding: 8px 0;
   }
 }

@@ -24,7 +24,7 @@
     align-items: center;
   }
   nav ul {
-    display: none;
+    display: none !important;
     flex-direction: column;
     background: #fff;
     position: absolute;
@@ -35,7 +35,7 @@
     z-index: 99;
   }
   nav ul.active {
-    display: flex;
+    display: flex !important;
   }
   .hamburger {
     display: flex;

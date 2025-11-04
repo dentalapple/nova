@@ -10,6 +10,7 @@
   <header>
     <div class="container header-container">
   <a class="brand" href="index.html"><img src="logo nova.jfif" alt="Nova Restaurant logo"></a>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">&#9776;</button>
       <nav>
         <ul>
            <li><a href="nova.html">NOVA</a></li>
@@ -56,5 +57,10 @@
   <footer>
     <div class="container">© 2025 Nova Restaurant. Wszelkie prawa zastrzeżone.</div>
   </footer>
+  <script>
+    function toggleMenu() {
+      document.querySelector('nav ul').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

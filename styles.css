@@ -1,3 +1,49 @@
+@media (max-width: 800px) {
+  .brand img {
+    height: 60px;
+  }
+}
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--accent);
+  z-index: 100;
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100vw;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    z-index: 99;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .brand img {
+    height: 60px;
+  }
+}
 /* Main start panel styles */
 .main-hero {
   min-height: 100vh;

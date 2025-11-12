@@ -1,3 +1,29 @@
+/* O nas gallery: 3 obok siebie, pionowe zdjęcia */
+.onas-gallery-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.onas-gallery-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  height: auto;
+  object-fit: cover;
+  max-width: 340px;
+  min-height: 420px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+}
+@media (max-width: 900px) {
+  .onas-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .onas-gallery-img {
+    max-width: 98vw;
+  }
+}
 @media (max-width: 800px) {
   .brand img {
     height: 60px;
